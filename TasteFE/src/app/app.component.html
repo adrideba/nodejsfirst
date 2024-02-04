@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+<div *ngIf="(recipes$ | async) as recipes">
+  <div *ngFor="let recipe of recipes.recipes">
+    <h2>{{ recipe.Title }}</h2>
+    <p>{{ recipe.Description }}</p>
+  </div>
+</div>
+
+OXXIIIIIIIIIIIIII
