@@ -5,7 +5,7 @@ import article from "./controllers/article.controller";
 import tag from "./controllers/tag.controller";
 
 const app = express(),
-  port = 8080,
+  port = 3000,
   bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded());
