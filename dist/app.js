@@ -8,7 +8,7 @@ const recipe_controller_1 = __importDefault(require("./controllers/recipe.contro
 const category_controller_1 = __importDefault(require("./controllers/category.controller"));
 const article_controller_1 = __importDefault(require("./controllers/article.controller"));
 const tag_controller_1 = __importDefault(require("./controllers/tag.controller"));
-const app = (0, express_1.default)(), port = 3000, bodyParser = require("body-parser");
+const app = (0, express_1.default)(), port = 8080, bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 app.use(express_1.default.static(process.cwd() + "/TasteFE/dist/taste-fe/browser"));
