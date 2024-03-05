@@ -20,3 +20,4 @@ var SectionEnum;
     SectionEnum[SectionEnum["InstagramFooter"] = 14] = "InstagramFooter";
     SectionEnum[SectionEnum["Instagram"] = 15] = "Instagram";
 })(SectionEnum || (exports.SectionEnum = SectionEnum = {}));
+//# sourceMappingURL=section.enum.js.map

@@ -1,5 +1,4 @@
 "use strict";
-// db.ts
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.closeDatabaseConnection = exports.connectToDatabase = void 0;
 const mssql_1 = require("mssql");
@@ -34,3 +33,4 @@ async function closeDatabaseConnection() {
     }
 }
 exports.closeDatabaseConnection = closeDatabaseConnection;
+//# sourceMappingURL=db.helper.js.map

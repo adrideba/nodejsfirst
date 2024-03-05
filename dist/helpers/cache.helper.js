@@ -1,5 +1,4 @@
 "use strict";
-// cacheMiddleware.ts
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -24,13 +23,12 @@ const cacheMiddleware = (duration) => {
         else {
             res.sendResponse = res.send;
             res.send = (body) => {
-                // Assuming body is a JSON object, you can JSON.stringify it before caching
-                const jsonString = JSON.stringify(body);
-                memory_cache_1.default.put(key, jsonString, duration * 1000);
-                res.sendResponse(jsonString);
+                memory_cache_1.default.put(key, body, duration * 1000);
+                res.sendResponse(body);
             };
             next();
         }
     };
 };
 exports.cacheMiddleware = cacheMiddleware;
+//# sourceMappingURL=cache.helper.js.map

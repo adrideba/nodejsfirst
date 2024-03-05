@@ -135,3 +135,4 @@ router.get("/tag/:tag/:page", (0, cache_helper_1.cacheMiddleware)(cacheTime), as
     }
 });
 exports.default = router;
+//# sourceMappingURL=recipe.controller.js.map
