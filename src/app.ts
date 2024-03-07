@@ -10,7 +10,7 @@ const app = express(),
 
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
-app.use(express.static(process.cwd() + "/TasteFE/dist/taste-fe/server"));
+app.use(express.static(process.cwd() + "/TasteFE/dist/taste-fe/browser"));
 
 app.use("/api/recipe", recipe);
 app.use("/api/category", category);
@@ -18,7 +18,7 @@ app.use("/api/article", article);
 app.use("/api/tag", tag);
 
 app.get("/", (req, res) => {
-  res.sendFile(process.cwd() + "/TasteFE/dist/taste-fe/server/index.server.html");
+  res.sendFile(process.cwd() + "/TasteFE/dist/taste-fe/browser/index.html");
 });
 
 app.listen(port, () => {
